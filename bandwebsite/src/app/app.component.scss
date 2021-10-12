@@ -3,8 +3,10 @@
 }
 
 .header{
+    position: fixed;
     height: 46px;
     background-color: #000;
+    width: 100%;
     ul{
         
     } 
@@ -33,6 +35,7 @@
     }
     li:hover i{
         color: black;
+        transition: 0.4s;
     }
     .nav-more{
         display: none;
