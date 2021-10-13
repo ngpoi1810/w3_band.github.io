@@ -101,13 +101,14 @@
         }
     }
 }
-
+.text-white {
+    color: white;
+}
 .content{
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    
     div.section-content{
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
         padding: 64px 16px;
         text-align: center;
         .section-heading {
@@ -148,7 +149,91 @@
             }
         }
     }
+    div.tour-content {
+        background-color: black;
+        ul {
+            background-color: white;
+            text-align: left;
+            margin-top: 15px;
+            color: #757575;
+            line-height: 1.5;
+            li {
+                font-size: 15px;
+                padding: 8px 16px;
+                list-style: none;
+                border-bottom: 1px solid #ddd;
+                .sold-out {
+                    background-color: #f44336;
+                    color: white;
+                    margin-left: 16px;
+                    padding: 2px 8px;
+                    font-size: 15px;
+                }
+                .count-ticket {
+                    float: right;
+                    background-color: black;
+                    color: white;
+                    border-radius: 50%;
+                    padding: 0 8px;
+                    margin: 0 16px 0 0;
+                }
+            }
+        }
+        .buy-ticket {
+            overflow: hidden;
+            padding: 32px 0;
+            margin: 0 -8px;
+            .section-ticket {
+                width: 33.33%;
+                float: left;
+                padding: 0 8px;
+                .block-content {
+                    background-color: white;
+                    font-size: 15px;
+                    line-height: 1.5;
+                    text-align: left;
+                    border-radius:0 0 15px 15px ;
+                    padding: 0 16px;
+                    .country-content {
+                        padding: 15px 0;
+                        font-weight: bold;
+                    }
+                    .date-content {
+                        padding-bottom: 15px;
+                        opacity: 0.6;
+                    }
+                    .content-ticket {
+                        color: black;
+                        padding-bottom: 15px;
+                    }
+                    a {
+                        background-color: black;
+                        color: white;
+                        padding: 8px 16px;
+                        margin-bottom: 16px;
+                        text-decoration: none;
+                        display: inline-block;
+                        border-radius: 5px;
+                        &:hover {
+                            background-color: #ccc;
+                            color: black;
+                        }
+                    }
+                }
+                img {
+                        border-radius:15px 15px 0 0 ;
+                        width: 100%;
+                        display: block;
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                }
+                
+            }
+        }
+    }
 }
+
 
 .footer{
 
