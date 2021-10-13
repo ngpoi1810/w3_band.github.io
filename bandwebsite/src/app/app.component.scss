@@ -131,6 +131,22 @@
             font-family: "Lato", sans-serif;
             font-size: 15px;
         }
+        .content-member {
+            padding-top: 47px;
+            overflow: hidden;
+            .member {
+                float: left;
+                width: 33.33%;
+                p {
+                    font-size: 15px;
+                }
+                img {
+                    margin-top: 15px;
+                    width: 153px;
+                    border-radius: 5px;
+                }
+            }
+        }
     }
 }
 
