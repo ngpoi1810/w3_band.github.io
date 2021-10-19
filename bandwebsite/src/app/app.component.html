@@ -1,16 +1,16 @@
 <div class="wrapper">
   <div class="header">
     <ul class="nav">
-      <li><a href="">home</a></li>
-      <li><a href="">band</a></li>
-      <li><a href="">tour</a></li>
-      <li><a href="">contact</a></li>
+      <li><a href="#">home</a></li>
+      <li><a href="#band">band</a></li>
+      <li><a href="#tour">tour</a></li>
+      <li><a href="#contact">contact</a></li>
       <li>
         <a href="">more<i class="fa fa-caret-down" aria-hidden="true"></i></a>
         <ul class="nav-more">
-          <li><a href="">Merchandise</a></li>
-          <li><a href="">Extra</a></li>
-          <li><a href="">Media</a></li>
+          <li><a href="#">Merchandise</a></li>
+          <li><a href="#">Extra</a></li>
+          <li><a href="#">Media</a></li>
         </ul>
       </li>
     </ul>
@@ -25,7 +25,7 @@
     </div>
   </div>
   <div class="content">
-    <div class="section-content">
+    <div id="band" class="section-content">
       <h1 class="section-heading">
         THE BAND
       </h1>
@@ -50,7 +50,7 @@
         </div>
       </div>
     </div>  
-    <div class="tour-content">
+    <div id="tour" class="tour-content">
       <div class="section-content">
         <h1 class="section-heading text-white">
           TOUR DATES
@@ -98,17 +98,53 @@
       </div>
       </div>  
     </div>
-    <div class="section-content">
+    <div id="contact" class="section-content">
       <h1 class="section-heading">
         CONTACT
       </h1>
       <p class="section-sub-heading">
         Fan? Drop a note!
       </p>
+      <div class="contact-body">
+        <div class="left-contact row-half">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          Chicago, US
+          <br>
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          Phone: +00 151515
+          <br>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          Email: mail@mail.com
+          <br>
+        </div>
+        <div class="right-contact row-half">
+          <div class="c-name-email">
+            <div class="contact-input row-half">
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="contact-input row-half">
+              <input type="text" placeholder="Email">
+            </div>
+          </div>
+          <div class="contact-input">
+            <input type="text" placeholder="Message">
+          </div>
+          <button type="submit">SEND</button>
+        </div>
+      </div>
+    </div>
+    <div class="map-content">
+      <img src="../assets/images/map.jpg" alt="">
     </div>
   </div>
   <div class="footer">
-
+      <i class="fa fa-facebook-official" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <i class="fa fa-snapchat" aria-hidden="true"></i>
+      <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+      <p>Powered by <a href="">w3.css</a></p>
   </div>
 </div>
 <ng-template #content let-modal>
