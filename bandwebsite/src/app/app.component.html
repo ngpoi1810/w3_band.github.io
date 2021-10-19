@@ -66,8 +66,6 @@
           <li>November <span class="count-ticket">3</span></li>
         </ul>
         <!-- End Tour Tickets -->
-
-
          <!-- Buy Tickets -->
       <div class="buy-ticket">
         <div class="section-ticket">
@@ -76,7 +74,7 @@
             <p class="country-content">New York</p>
             <p class="date-content">Fri 27 Nov 2016</p>
             <p class="content-ticket">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <a href="#">Buy Tickets</a>
+            <button href="#" (click)="open(content)">Buy Tickets</button>
           </div>
         </div>
         <div class="section-ticket">
@@ -85,7 +83,7 @@
             <p class="country-content">Paris</p>
             <p class="date-content">Sat 28 Nov 2016</p>
             <p class="content-ticket">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <a href="#">Buy Tickets</a>
+            <button href="#" (click)="open(content)">Buy Tickets</button>
           </div>
         </div>
         <div class="section-ticket">
@@ -94,12 +92,11 @@
             <p class="country-content">San Francisco</p>
             <p class="date-content">Sun 29 Nov 2016</p>
             <p class="content-ticket">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <a href="#">Buy Tickets</a>
+            <button href="#" (click)="open(content)">Buy Tickets</button>
           </div>
         </div>
       </div>
-      </div>
-       
+      </div>  
     </div>
     <div class="section-content">
       <h1 class="section-heading">
@@ -114,3 +111,28 @@
 
   </div>
 </div>
+<ng-template #content let-modal>
+  <div class="modal" > 
+    <div class="modal-content" >
+      <button class="icon-close close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+      <div class="modal-header text-white">
+        <h2 id="modal-basic-title"><i class="fa fa-suitcase" aria-hidden="true"></i>Tickets</h2>
+      </div>
+      <div class="modal-body">
+        <div class="input-text">
+          <p><i class="fa fa-shopping-cart" aria-hidden="true"></i>Tickets, $15 per person</p>
+          <input type="text" placeholder="How many?">
+        </div>
+        <div class="input-text">
+          <p><i class="fa fa-user" aria-hidden="true"></i>Send To</p>
+          <input type="email" placeholder="Enter email">
+        </div>
+        <button >PAY<i class="fa fa-check" aria-hidden="true"></i></button>
+        <p class="help-content">Need <a href="#">help?</a></p>
+      </div>
+    </div>
+</div>
+</ng-template>
+

@@ -104,6 +104,7 @@
 .text-white {
     color: white;
 }
+// Start Css content------------
 .content{
     div.section-content{
         margin-left: auto;
@@ -179,6 +180,7 @@
                 }
             }
         }
+        // Buy ticket css --------------
         .buy-ticket {
             overflow: hidden;
             padding: 32px 0;
@@ -206,7 +208,8 @@
                         color: black;
                         padding-bottom: 15px;
                     }
-                    a {
+                    button {
+                        border: none;
                         background-color: black;
                         color: white;
                         padding: 8px 16px;
@@ -231,10 +234,121 @@
                 
             }
         }
+        // End buy ticket ------------------
+    }
+}
+// End Css content--------------
+.footer{
+
+}
+
+// Start Css MODAL CONTENT ---------------------
+.modal {
+    display: flex;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.137);
+    align-items: center;
+    justify-content: center;
+    animation: modalFadeIn ease .5s;
+    .modal-content {
+        background-color: white;
+        width: 900px;
+        position: relative;
+        .icon-close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: white;
+            padding: 8px 16px;
+            &:hover {
+                color: black;
+                background-color: rgb(197, 195, 194);
+            }
+        }
+        //css header modal
+        .modal-header {
+            background-color: #009688;
+            padding: 32px 16px;
+            letter-spacing: 4px;
+            font-family: "Segoe UI",Arial,sans-serif;
+            text-align: center;
+            h2 {
+                margin: 10px 0;
+                font-weight: 400;
+                font-size: 30px;
+                width: 100%;
+                i {
+                    
+                    margin-right: 16px;
+                }
+            }
+        }
+        // end css header modal
+
+        //css body modal 
+        .modal-body {
+            padding: 0 16px;
+            .input-text {
+                padding-bottom: 16px;
+                p {
+                    margin: 15px 0;
+                    font-size: 15px;
+                    line-height: 1.5;
+                    i {
+                        letter-spacing: 2px;
+                    }
+                }
+                input {
+                    width: 100%;
+                    padding: 8px;
+                    border: 1px solid #ccc;
+                    font-size: 15px;
+                }
+            }
+            button {
+                width: 100%;
+                cursor: pointer;
+                padding: 16px;
+                border: none;
+                background-color:#009688;
+                font-size: 16px;
+                margin-bottom:15px;
+                line-height: 1.6;
+                color: white;
+                &:hover {
+                    color: black;
+                    background-color:#bdc5c4;
+                }
+            }
+            .help-content {
+                margin: 15px 0 30px 0;
+                float: right;
+                font-size: 15px;
+                a {
+                    color:#009688 ;
+                }
+            }
+        }
+    }
+
+}
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
 
-.footer{
 
-}
+
+
