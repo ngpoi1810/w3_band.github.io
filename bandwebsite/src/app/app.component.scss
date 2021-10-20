@@ -1,4 +1,6 @@
-
+.wrapper {
+    overflow: hidden;
+}
 .header{
     position: fixed;
     height: 46px;
@@ -75,6 +77,9 @@
         &:hover{
             background-color: #f44336;
             cursor: pointer;
+        }
+        .fa-bars {
+            display: none;
         }
     }
   
@@ -271,7 +276,7 @@
                float: right;
                color: white;
                background-color: black;
-               margin: 16px 0;
+               margin: 16px 7px 16px 0;
                border: none;
                padding: 8px 16px;
                text-align: center;
@@ -425,6 +430,72 @@
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+// css media tablet 
+@media (min-width: 740px) and (max-width: 1023px){
+    .section-content {
+        max-width: 100%;
+    }
+}
+@media (max-width: 740px) {
+    .header {
+        overflow: hidden;
+        li {
+            display: block;
+        }
+        .search-icon {
+            .fa-search {
+                display: none;
+            }
+            .fa-bars {
+                display: inline-block;
+            }
+        }
+    }
+    .silde {
+        padding-top: 65%;
+        .text-content {
+            display: none;
+        }
+    }
+    .content {
+        div.section-content {
+            max-width: 100%;
+            .content-member {
+                .member {
+                    float: none;
+                    width: 100%;
+                    p {
+                        margin: 15px 0;
+                    }
+                    img {
+                        width: 60%;
+                        margin: 0 0 16px 0;
+                    }
+                }
+            }
+        }
+        div.tour-content {
+            .buy-ticket {
+                .section-ticket {
+                    width: 100%;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+        .contact-body {
+            .left-contact {
+                width: 100%;
+                margin-bottom: 16px;
+                margin-left: 10px;
+            }
+            .right-contact {
+                width: 100%;
+            }
+        }
+    }
+    
 }
 
 
